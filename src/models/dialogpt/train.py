@@ -21,7 +21,8 @@ from src.utils.eval import generate_responses
 from src.utils.model import get_models
 from src.utils.parser import parse_general_args
 from src.utils.trainer import Trainer
-from src.utils.training import Args, calculate_metrics
+from src.utils.training import Args
+from src.utils.training import calculate_metrics
 from src.utils.training import init_gpu_params
 from src.utils.training import set_seed
 from src.utils.training import set_lr
