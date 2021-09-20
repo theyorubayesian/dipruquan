@@ -3,18 +3,18 @@ import sys
 
 command = \
     """
-    python compression/distillation/msft/dstc/model_eval.py
+    python src/eval/model_eval.py
     --model-name microsoft/DialoGPT-medium
     --from-hf
-    --context-file compression/distillation/msft/dstc/data/test.source
-    --output-file results/model.6k.resp.txt
+    --context-file src/eval/data/test.source
+    --output-file outputs/dialogpt-medium.6k.resp.txt
     --force
     --batch-size 64
     --tokenizer-max-len 128
     --model-max-len 256
     --beam 10
-    --refs compression/distillation/msft/dstc/data/test.refs.txt
-    --keys compression/distillation/msft/dstc/data/keys.6k.txt
+    --refs src/eval/data/test.refs.txt
+    --keys src/eval/data/keys.6k.txt
     --vshuman -1
     """
 
