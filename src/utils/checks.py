@@ -1,6 +1,3 @@
-#  Copyright (c) InstaDeep Ltd. 
-#  Licensed under the MIT license. 
-
 import os
 import shutil
 

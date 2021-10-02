@@ -1,6 +1,3 @@
-#  Copyright (c) InstaDeep Ltd. 
-#  Licensed under the MIT license.
-
 import os
 import time
 from bisect import bisect_left
