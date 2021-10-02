@@ -24,7 +24,7 @@ class Trainer:
         client["losses/loss"].log(iters.last_loss)
         client["metric/ppl"].log(iters.last_ppl)
         
-        if iters.log_params:    # TODO: iters?
+        if log_params:    # TODO: iters?
             for param_name, param in model.named_parameters():
                 client[f"parameter_mean/{param_name}"].log(
                     param.data.mean())
